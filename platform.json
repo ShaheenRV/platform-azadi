@@ -1,0 +1,47 @@
+{
+  "name": "azadi",
+  "title": "Azadi",
+  "description": "A software development kit for developing applications on Azadi System on Chip",
+  "homepage": "https://merledupk.org",
+  "license": "Apache-2.0",
+  "keywords": ["sdk", "risc-v", "azadi"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platformio/platform-myplatform.git"
+  },
+  "version": "0.0.1",
+  "frameworks": {
+    "azadi-sdk": {
+      "package": "framework-azadi-sdk",
+      "script": "builder/frameworks/azadi-sdk.py"
+    }
+  },
+  "packages": {
+    "framework-azadi-sdk": {
+      "type": "framework",
+      "optional": true,
+      "version": "0.1"
+    },
+    "toolchain-riscv": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "~1.80300.0"
+    },
+    "tool-openocd-riscv": {
+      "optional": true,
+      "type": "uploader",
+      "owner": "platformio",
+      "version": "~2.1000.0"
+    },
+    "tool-jlink": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "^1.63208.0"
+    }
+  },
+  "pythonPackages": {
+    "pypi-pkg-1": "1.2.3",
+    "pypi-pkg-2": ">=2.3, <3"
+  }
+}

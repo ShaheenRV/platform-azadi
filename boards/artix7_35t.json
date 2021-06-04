@@ -1,0 +1,37 @@
+{
+  "build": {
+    "f_cpu": "50000000L",
+    "hwids": [
+      [
+        "0x002b",
+        "0x15bb"
+      ]
+    ],
+    "mabi": "ilp32d",
+    "march": "rv32imfdc",
+    "mcmodel": "medany",
+    "mcu": "AM130",
+    "azadi-sdk":{
+      "ldscript": "link.ld"
+    }
+  },
+  "debug": {
+    "onboard_tools": [
+      "ftdi"
+    ],
+    "svd_path": "arty35t.svd"
+  },
+  "frameworks": ["azadi-sdk"],
+  "name": "Artix-7 35T",
+  "upload": {
+    "maximum_ram_size": 131072,
+    "maximum_size": 0,
+    "protocol": "ftdi",
+    "protocols": [
+      "ftdi",
+      "jlink"
+    ]
+  },
+  "url": "https://www.xilinx.com/products/boards-and-kits/arty.html",
+  "vendor": "Xilinx"
+}
