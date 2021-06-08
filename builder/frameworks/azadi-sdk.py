@@ -25,10 +25,6 @@ env.Append(
         "-std=gnu99"
     ],
 
-    CCFLAGS=[
-        "-fno-builtin-printf"
-    ],
-
     CPPPATH=[
         join(FRAMEWORK_DIR, "bsp", "include"),
         # join(FRAMEWORK_DIR, "bsp", "third_party", target)
@@ -42,6 +38,8 @@ env.Append(
         "-static"
     ],
 )
+
+print(env.get("CCFLAGS"))
 
 if not board_config.get("build.ldscript", ""):
     env.Append(LIBPATH=[join(FRAMEWORK_DIR, "bsp", "core")])

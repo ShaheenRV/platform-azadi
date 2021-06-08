@@ -18,6 +18,8 @@ env.Append(
 
     LINKFLAGS=[
         "-nostartfiles",
+        "-static",
+        "-nostdlib",
         "-march=%s" % board_config.get("build.march"),
         "-mabi=%s" % board_config.get("build.mabi"),
         "-mcmodel=%s" % board_config.get("build.mcmodel")

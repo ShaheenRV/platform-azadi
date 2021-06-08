@@ -7,8 +7,8 @@
         "0x15bb"
       ]
     ],
-    "mabi": "ilp32d",
-    "march": "rv32imfdc",
+    "mabi": "ilp32",
+    "march": "rv32i",
     "mcmodel": "medany",
     "mcu": "AM130",
     "azadi-sdk":{

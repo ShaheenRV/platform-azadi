@@ -142,11 +142,11 @@ elif upload_protocol in debug_tools:
     # ])
 
     upload_tool = join(platform.get_package_dir(
-        "framework-azadi-sdk") or "", "bsp", "util", "uploader.py")
+        "framework-azadi-sdk") or "", "bsp", "util", "serial.sh")
 
     env.Replace(
         UPLOADER=upload_tool,
-        UPLOADCMD='"$PYTHONEXE" "$UPLOADER" $SOURCE')
+        UPLOADCMD='"$UPLOADER" $SOURCE')
     upload_target = target_hex
     upload_actions = [env.VerboseAction("$UPLOADCMD", "Uploading $SOURCE")]
 
